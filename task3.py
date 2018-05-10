@@ -14,11 +14,12 @@
 
 # Write your function here
 
+def recursivesum(piece):
+    if len(piece)==0:
+        return 0
+    else:
+        return piece[0] + recursivesum(piece[1:])
+print recursivesum([1, 3, 4, 2, 5])
 
 
-def main():
-    # Test your function here
-    pass
 
-if __name__ == "__main__":
-    main()

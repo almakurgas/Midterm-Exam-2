@@ -27,9 +27,29 @@
 
 
 
-def main():
-    # Test your functions here
+def main(cesare_cipher):
+    broj_pomeranja = int(input("Unesite broj: ")
+
+    enc_word = ""
+    for character in cesare_cipher:
+        enc_char = chr(ord(character) + broj_pomeranja)
+        enc_word += enc_char
+
+    return enc_word
+
+
+def decrypt(enc_word):
+    word = ""
+    for enc_char in enc_word:
+        character = chr(ord(enc_char) - broj_pomeranja)
+        word += character
+
+    return word
     pass
 
 if __name__ == "__main__":
-    main()
+    kriptovana_rijec = main("Julius Cesar")
+    print(kriptovana_rijec)
+
+    rijec = decrypt(kriptovana_rijec)
+    print(rijec)

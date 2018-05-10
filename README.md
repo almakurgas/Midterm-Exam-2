@@ -1,7 +1,7 @@
 # Midterm-Exam-2
 
-Name:
+Name: Alma 
 
-Surname:
+Surname:Kurgaš
 
-Index #:
+Index #:16/053
